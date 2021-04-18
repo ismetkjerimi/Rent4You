@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2AC339DB-2BC7-4A28-B056-12B8EE63FBA0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CarRentalApp</RootNamespace>
+    <AssemblyName>CarRentalApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Design, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Docking, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Navigator, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Navigator.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Workspace, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Krypton.Components.Suite.4.5.9\lib\net20\ComponentFactory.Krypton.Workspace.dll</HintPath>
+    </Reference>
+    <Reference Include="CsvHelper, Version=12.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.12.1.2\lib\net45\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.4.5.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Security.AccessControl, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.4.5.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.4.5.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.5.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.4.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\domain\Car.cs" />
+    <Compile Include="Core\domain\Classification.cs" />
+    <Compile Include="Core\domain\Role.cs" />
+    <Compile Include="Core\domain\Client.cs" />
+    <Compile Include="Core\domain\Bill.cs" />
+    <Compile Include="Core\domain\SeedData\ResourcePaths.cs" />
+    <Compile Include="Core\domain\User.cs" />
+    <Compile Include="Core\domain\Rent.cs" />
+    <Compile Include="Core\IUnitOfWork.cs" />
+    <Compile Include="Core\Repositories\IBillRepository.cs" />
+    <Compile Include="Core\Repositories\ICarRepository.cs" />
+    <Compile Include="Core\Repositories\IClassificationRepository.cs" />
+    <Compile Include="Core\Repositories\IClientRepository.cs" />
+    <Compile Include="Core\Repositories\IRoleRepository.cs" />
+    <Compile Include="Core\Repositories\IUserRepository.cs" />
+    <Compile Include="Core\Repositories\IRentRepository.cs" />
+    <Compile Include="Core\Repositories\IRepository.cs" />
+    <Compile Include="Core\Utils\Utils.cs" />
+    <Compile Include="Migrations\201904220006374_RefactorSomeEntityDataType.cs" />
+    <Compile Include="Migrations\201904220006374_RefactorSomeEntityDataType.Designer.cs">
+      <DependentUpon>201904220006374_RefactorSomeEntityDataType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904220015538_RefactorChangeRentIdToGuid.cs" />
+    <Compile Include="Migrations\201904220015538_RefactorChangeRentIdToGuid.Designer.cs">
+      <DependentUpon>201904220015538_RefactorChangeRentIdToGuid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904251134156_AddNewPropertiesToClientsUsersCars.cs" />
+    <Compile Include="Migrations\201904251134156_AddNewPropertiesToClientsUsersCars.Designer.cs">
+      <DependentUpon>201904251134156_AddNewPropertiesToClientsUsersCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905021716564_AddNewPropsEntities.cs" />
+    <Compile Include="Migrations\201905021716564_AddNewPropsEntities.Designer.cs">
+      <DependentUpon>201905021716564_AddNewPropsEntities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905022222224_PhoneDataTypeRefactor.cs" />
+    <Compile Include="Migrations\201905022222224_PhoneDataTypeRefactor.Designer.cs">
+      <DependentUpon>201905022222224_PhoneDataTypeRefactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905040816337_UniqueIndexOfLicensePlate.cs" />
+    <Compile Include="Migrations\201905040816337_UniqueIndexOfLicensePlate.Designer.cs">
+      <DependentUpon>201905040816337_UniqueIndexOfLicensePlate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905060149311_RefactorEntitiesProps.cs" />
+    <Compile Include="Migrations\201905060149311_RefactorEntitiesProps.Designer.cs">
+      <DependentUpon>201905060149311_RefactorEntitiesProps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persistence\CarRentalDbInitializer.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Forms\ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\ClientForm.Designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Forms\CarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\CarForm.Designer.cs">
+      <DependentUpon>CarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Forms\ClassificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\ClassificationForm.Designer.cs">
+      <DependentUpon>ClassificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Forms\LoginFom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\LoginFom.Designer.cs">
+      <DependentUpon>LoginFom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904201954348_InitialMigration.cs" />
+    <Compile Include="Migrations\201904201954348_InitialMigration.Designer.cs">
+      <DependentUpon>201904201954348_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904202138553_SetRentEntityTableConstraint.cs" />
+    <Compile Include="Migrations\201904202138553_SetRentEntityTableConstraint.Designer.cs">
+      <DependentUpon>201904202138553_SetRentEntityTableConstraint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904210115126_BillEntityTableConstraintConfiguration.cs" />
+    <Compile Include="Migrations\201904210115126_BillEntityTableConstraintConfiguration.Designer.cs">
+      <DependentUpon>201904210115126_BillEntityTableConstraintConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904210204293_UserAndRoleEntityTableConstraintConfiguration.cs" />
+    <Compile Include="Migrations\201904210204293_UserAndRoleEntityTableConstraintConfiguration.Designer.cs">
+      <DependentUpon>201904210204293_UserAndRoleEntityTableConstraintConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904210209349_ClientEntityTableConstraintConfiguration.cs" />
+    <Compile Include="Migrations\201904210209349_ClientEntityTableConstraintConfiguration.Designer.cs">
+      <DependentUpon>201904210209349_ClientEntityTableConstraintConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904210214111_CarEntityTableConstraintConfiguration.cs" />
+    <Compile Include="Migrations\201904210214111_CarEntityTableConstraintConfiguration.Designer.cs">
+      <DependentUpon>201904210214111_CarEntityTableConstraintConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904210216410_ClassificationEntityTableConstraintConfiguration.cs" />
+    <Compile Include="Migrations\201904210216410_ClassificationEntityTableConstraintConfiguration.Designer.cs">
+      <DependentUpon>201904210216410_ClassificationEntityTableConstraintConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904210239107_FixClassificationEntityConstraint.cs" />
+    <Compile Include="Migrations\201904210239107_FixClassificationEntityConstraint.Designer.cs">
+      <DependentUpon>201904210239107_FixClassificationEntityConstraint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\BillConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\CarConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\ClassificationConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\ClientConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\RentConfiguration.cs" />
+    <Compile Include="Persistence\CarRentalAppContext.cs" />
+    <Compile Include="Persistence\EntityConfigurations\RoleConfiguration.cs" />
+    <Compile Include="Persistence\EntityConfigurations\UserConfiguration.cs" />
+    <Compile Include="Persistence\Repositories\BillRepository.cs" />
+    <Compile Include="Persistence\Repositories\CarRepository.cs" />
+    <Compile Include="Persistence\Repositories\ClassificationRepository.cs" />
+    <Compile Include="Persistence\Repositories\ClientRepository.cs" />
+    <Compile Include="Persistence\Repositories\UserRepository.cs" />
+    <Compile Include="Persistence\Repositories\RentRepository.cs" />
+    <Compile Include="Persistence\Repositories\Repository.cs" />
+    <Compile Include="Persistence\Repositories\RoleRepository.cs" />
+    <Compile Include="Persistence\UnitOfWork.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Forms\RentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\RentsForm.Designer.cs">
+      <DependentUpon>RentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Forms\UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Forms\WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Forms\WaitForm.Designer.cs">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\BillsPageUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControls\BillsPageUserControl.Designer.cs">
+      <DependentUpon>BillsPageUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\Components\UserUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControls\Components\UserUserControl.Designer.cs">
+      <DependentUpon>UserUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\HomePageUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControls\HomePageUserControl.Designer.cs">
+      <DependentUpon>HomePageUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\Components\RentBillUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControls\Components\RentBillUserControl.Designer.cs">
+      <DependentUpon>RentBillUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\RentsPageUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControls\RentsPageUserControl.Designer.cs">
+      <DependentUpon>RentsPageUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\CarsPageUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControls\CarsPageUserControl.Designer.cs">
+      <DependentUpon>CarsPageUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\Components\RentUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControls\Components\RentUserControl.Designer.cs">
+      <DependentUpon>RentUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\UsersPageUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControls\UsersPageUserControl.Designer.cs">
+      <DependentUpon>UsersPageUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\ClientsPageUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControls\ClientsPageUserControl.Designer.cs">
+      <DependentUpon>ClientsPageUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserControls\SettingsPageUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\UserControls\SettingsPageUserControl.Designer.cs">
+      <DependentUpon>SettingsPageUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Migrations\201904220006374_RefactorSomeEntityDataType.resx">
+      <DependentUpon>201904220006374_RefactorSomeEntityDataType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904220015538_RefactorChangeRentIdToGuid.resx">
+      <DependentUpon>201904220015538_RefactorChangeRentIdToGuid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904251134156_AddNewPropertiesToClientsUsersCars.resx">
+      <DependentUpon>201904251134156_AddNewPropertiesToClientsUsersCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905021716564_AddNewPropsEntities.resx">
+      <DependentUpon>201905021716564_AddNewPropsEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905022222224_PhoneDataTypeRefactor.resx">
+      <DependentUpon>201905022222224_PhoneDataTypeRefactor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905040816337_UniqueIndexOfLicensePlate.resx">
+      <DependentUpon>201905040816337_UniqueIndexOfLicensePlate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905060149311_RefactorEntitiesProps.resx">
+      <DependentUpon>201905060149311_RefactorEntitiesProps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\CarForm.resx">
+      <DependentUpon>CarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\ClassificationForm.resx">
+      <DependentUpon>ClassificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\LoginFom.resx">
+      <DependentUpon>LoginFom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904201954348_InitialMigration.resx">
+      <DependentUpon>201904201954348_InitialMigration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904202138553_SetRentEntityTableConstraint.resx">
+      <DependentUpon>201904202138553_SetRentEntityTableConstraint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904210115126_BillEntityTableConstraintConfiguration.resx">
+      <DependentUpon>201904210115126_BillEntityTableConstraintConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904210204293_UserAndRoleEntityTableConstraintConfiguration.resx">
+      <DependentUpon>201904210204293_UserAndRoleEntityTableConstraintConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904210209349_ClientEntityTableConstraintConfiguration.resx">
+      <DependentUpon>201904210209349_ClientEntityTableConstraintConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904210214111_CarEntityTableConstraintConfiguration.resx">
+      <DependentUpon>201904210214111_CarEntityTableConstraintConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904210216410_ClassificationEntityTableConstraintConfiguration.resx">
+      <DependentUpon>201904210216410_ClassificationEntityTableConstraintConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904210239107_FixClassificationEntityConstraint.resx">
+      <DependentUpon>201904210239107_FixClassificationEntityConstraint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\RentsForm.resx">
+      <DependentUpon>RentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Forms\WaitForm.resx">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControls\BillsPageUserControl.resx">
+      <DependentUpon>BillsPageUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControls\Components\UserUserControl.resx">
+      <DependentUpon>UserUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControls\HomePageUserControl.resx">
+      <DependentUpon>HomePageUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControls\Components\RentBillUserControl.resx">
+      <DependentUpon>RentBillUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControls\RentsPageUserControl.resx">
+      <DependentUpon>RentsPageUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControls\CarsPageUserControl.resx">
+      <DependentUpon>CarsPageUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControls\Components\RentUserControl.resx">
+      <DependentUpon>RentUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControls\UsersPageUserControl.resx">
+      <DependentUpon>UsersPageUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControls\ClientsPageUserControl.resx">
+      <DependentUpon>ClientsPageUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserControls\SettingsPageUserControl.resx">
+      <DependentUpon>SettingsPageUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Core\domain\SeedData\cars.csv" />
+    <None Include="Core\domain\SeedData\classifications.csv" />
+    <None Include="Core\domain\SeedData\clients.csv" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CarRentalApp.Core.domain.Bill.datasource" />
+    <None Include="Properties\DataSources\CarRentalApp.Core.domain.Car.datasource" />
+    <None Include="Properties\DataSources\CarRentalApp.Core.domain.Classification.datasource" />
+    <None Include="Properties\DataSources\CarRentalApp.Core.domain.Client.datasource" />
+    <None Include="Properties\DataSources\CarRentalApp.Core.domain.Rent.datasource" />
+    <None Include="Properties\DataSources\CarRentalApp.Core.domain.User.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_picture_default.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\app_logo_black.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
