@@ -31,9 +31,9 @@ namespace CarRentalApp.View.UserControls
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomePageUserControl));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.rentsCountLabel = new System.Windows.Forms.Label();
@@ -174,6 +174,7 @@ namespace CarRentalApp.View.UserControls
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(245, 110);
             this.label3.TabIndex = 3;
+            this.label3.Paint += new System.Windows.Forms.PaintEventHandler(this.label3_Paint);
             // 
             // pictureBox2
             // 
@@ -195,6 +196,7 @@ namespace CarRentalApp.View.UserControls
             this.clientsCountLabel.Size = new System.Drawing.Size(62, 31);
             this.clientsCountLabel.TabIndex = 0;
             this.clientsCountLabel.Text = "200";
+            this.clientsCountLabel.Click += new System.EventHandler(this.clientsCountLabel_Click);
             // 
             // label1
             // 
@@ -224,16 +226,16 @@ namespace CarRentalApp.View.UserControls
             this.monthlyTakingChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.monthlyTakingChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.monthlyTakingChart.Legends.Add(legend1);
+            chartArea3.Name = "ChartArea1";
+            this.monthlyTakingChart.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.monthlyTakingChart.Legends.Add(legend3);
             this.monthlyTakingChart.Location = new System.Drawing.Point(63, 247);
             this.monthlyTakingChart.Name = "monthlyTakingChart";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Takings";
-            this.monthlyTakingChart.Series.Add(series1);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Takings";
+            this.monthlyTakingChart.Series.Add(series3);
             this.monthlyTakingChart.Size = new System.Drawing.Size(547, 382);
             this.monthlyTakingChart.TabIndex = 7;
             this.monthlyTakingChart.Text = "chart1";
@@ -327,6 +329,7 @@ namespace CarRentalApp.View.UserControls
             this.top3CarListBox.Name = "top3CarListBox";
             this.top3CarListBox.Size = new System.Drawing.Size(279, 81);
             this.top3CarListBox.TabIndex = 9;
+            this.top3CarListBox.SelectedIndexChanged += new System.EventHandler(this.top3CarListBox_SelectedIndexChanged);
             // 
             // top3ClientListBox
             // 

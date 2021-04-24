@@ -28,5 +28,10 @@ namespace CarRentalApp.View.UserControls
             UpdateChartUi();
 
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
