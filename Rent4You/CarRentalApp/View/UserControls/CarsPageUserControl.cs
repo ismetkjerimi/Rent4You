@@ -153,7 +153,10 @@ namespace CarRentalApp.View.UserControls
 
         private void CarsDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (carDataGridView.Rows[e.RowIndex].DataBoundItem == null) return;
+            if (carDataGridView.Rows[e.RowIndex].DataBoundItem == null)
+           
+                return;
+            
 
             //display row index
             var row = carDataGridView.Rows[e.RowIndex];
