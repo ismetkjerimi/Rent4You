@@ -87,13 +87,14 @@
             // userPhoneTextBox
             // 
             this.userPhoneTextBox.Location = new System.Drawing.Point(220, 347);
-            this.userPhoneTextBox.Mask = "+212 000-000000";
+            this.userPhoneTextBox.Mask = "+41 000-000000";
             this.userPhoneTextBox.Name = "userPhoneTextBox";
             this.userPhoneTextBox.Size = new System.Drawing.Size(161, 24);
             this.userPhoneTextBox.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userPhoneTextBox.StateCommon.Content.Padding = new System.Windows.Forms.Padding(15, 3, 3, 3);
             this.userPhoneTextBox.TabIndex = 6;
-            this.userPhoneTextBox.Text = "+212    -";
+            this.userPhoneTextBox.Text = "+41    -";
+            this.userPhoneTextBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.userPhoneTextBox_MaskInputRejected);
             // 
             // userLastNameTextBox
             // 

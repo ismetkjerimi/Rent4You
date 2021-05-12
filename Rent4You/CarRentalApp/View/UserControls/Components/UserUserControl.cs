@@ -253,5 +253,10 @@ namespace CarRentalApp.View.UserControls.Components
         {
             userPasswordTextBox.UseSystemPasswordChar = !userPasswordVisibleCheckBox.Checked;
         }
+
+        private void userPhoneTextBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }

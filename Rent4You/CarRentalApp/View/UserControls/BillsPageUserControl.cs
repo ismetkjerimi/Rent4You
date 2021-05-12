@@ -55,7 +55,7 @@ namespace CarRentalApp.View.UserControls
             }
 
             if (billDataGridView.Columns[e.ColumnIndex].DataPropertyName.Equals(nameof(Bill.Amount)))
-                e.Value = $"{bill.Amount:N0} MAD";
+                e.Value = $"{bill.Amount:N0} CH";
         }
 
         private void BillDataGridView_UserDeletingRow(object sender, DataGridViewRowCancelEventArgs e)
@@ -109,6 +109,11 @@ namespace CarRentalApp.View.UserControls
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void billDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -32,7 +32,7 @@ namespace CarRentalApp.View.UserControls
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BillsPageUserControl));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonHeader1 = new ComponentFactory.Krypton.Toolkit.KryptonHeader();
@@ -85,7 +85,7 @@ namespace CarRentalApp.View.UserControls
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1044, 100);
+            this.panel3.Size = new System.Drawing.Size(1088, 100);
             this.panel3.TabIndex = 2;
             // 
             // kryptonPanel1
@@ -96,7 +96,7 @@ namespace CarRentalApp.View.UserControls
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Black;
             this.kryptonPanel1.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.HeaderPrimary;
-            this.kryptonPanel1.Size = new System.Drawing.Size(1044, 10);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1088, 10);
             this.kryptonPanel1.TabIndex = 1;
             // 
             // kryptonHeader1
@@ -150,7 +150,7 @@ namespace CarRentalApp.View.UserControls
             this.selectedBillPanel.Location = new System.Drawing.Point(16, 30);
             this.selectedBillPanel.MinimumSize = new System.Drawing.Size(462, 444);
             this.selectedBillPanel.Name = "selectedBillPanel";
-            this.selectedBillPanel.Size = new System.Drawing.Size(462, 452);
+            this.selectedBillPanel.Size = new System.Drawing.Size(462, 465);
             this.selectedBillPanel.TabIndex = 14;
             // 
             // label9
@@ -160,9 +160,9 @@ namespace CarRentalApp.View.UserControls
             this.label9.ForeColor = System.Drawing.Color.Gold;
             this.label9.Location = new System.Drawing.Point(345, 311);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 16);
+            this.label9.Size = new System.Drawing.Size(29, 16);
             this.label9.TabIndex = 26;
-            this.label9.Text = "MAD";
+            this.label9.Text = "CH";
             // 
             // billDetailsLabel
             // 
@@ -386,7 +386,7 @@ namespace CarRentalApp.View.UserControls
             // printButton
             // 
             this.printButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.printButton.Location = new System.Drawing.Point(388, 487);
+            this.printButton.Location = new System.Drawing.Point(388, 500);
             this.printButton.Name = "printButton";
             this.printButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
             this.printButton.Size = new System.Drawing.Size(90, 25);
@@ -403,7 +403,7 @@ namespace CarRentalApp.View.UserControls
             this.panel1.Controls.Add(this.selectedBillPanel);
             this.panel1.Location = new System.Drawing.Point(3, 106);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(516, 515);
+            this.panel1.Size = new System.Drawing.Size(516, 528);
             this.panel1.TabIndex = 16;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -416,7 +416,7 @@ namespace CarRentalApp.View.UserControls
             this.panel2.Controls.Add(this.billDataGridView);
             this.panel2.Location = new System.Drawing.Point(525, 103);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(519, 534);
+            this.panel2.Size = new System.Drawing.Size(563, 547);
             this.panel2.TabIndex = 17;
             // 
             // billDataGridView
@@ -440,11 +440,12 @@ namespace CarRentalApp.View.UserControls
             this.billDataGridView.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalSystem;
             this.billDataGridView.ReadOnly = true;
             this.billDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.billDataGridView.Size = new System.Drawing.Size(500, 408);
+            this.billDataGridView.Size = new System.Drawing.Size(544, 421);
             this.billDataGridView.StateCommon.Background.Color1 = System.Drawing.SystemColors.ControlLight;
             this.billDataGridView.StateCommon.Background.Color2 = System.Drawing.SystemColors.ControlLight;
             this.billDataGridView.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
             this.billDataGridView.TabIndex = 14;
+            this.billDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.billDataGridView_CellContentClick);
             this.billDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.BillDataGridView_CellFormatting);
             this.billDataGridView.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.BillDataGridView_RowEnter);
             this.billDataGridView.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.BillDataGridView_UserDeletedRow);
@@ -461,9 +462,9 @@ namespace CarRentalApp.View.UserControls
             // dateDataGridViewTextBoxColumn
             // 
             this.dateDataGridViewTextBoxColumn.DataPropertyName = "Date";
-            dataGridViewCellStyle1.Format = "d";
-            dataGridViewCellStyle1.NullValue = null;
-            this.dateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Format = "d";
+            dataGridViewCellStyle2.NullValue = null;
+            this.dateDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
             this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
             this.dateDataGridViewTextBoxColumn.ReadOnly = true;
@@ -505,7 +506,7 @@ namespace CarRentalApp.View.UserControls
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Name = "BillsPageUserControl";
-            this.Size = new System.Drawing.Size(1044, 681);
+            this.Size = new System.Drawing.Size(1088, 694);
             this.Load += new System.EventHandler(this.BillsPageUserControl_Load);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

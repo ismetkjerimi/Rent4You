@@ -36,7 +36,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(460, 634);
+            this.ClientSize = new System.Drawing.Size(452, 637);
             this.Name = "RentsForm";
             this.Text = "RentsForm";
             this.Load += new System.EventHandler(this.RentsForm_Load);

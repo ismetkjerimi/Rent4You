@@ -30,6 +30,7 @@ namespace CarRentalApp.View.UserControls.Components
         private void InitializeComponent()
         {
             this.panel4 = new System.Windows.Forms.Panel();
+            this.billDetailsTextBox = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.billcomputedPriceLabel = new System.Windows.Forms.Label();
             this.BackLinkLabelButton = new System.Windows.Forms.LinkLabel();
             this.label9 = new System.Windows.Forms.Label();
@@ -52,7 +53,6 @@ namespace CarRentalApp.View.UserControls.Components
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.billDetailsTextBox = new ComponentFactory.Krypton.Toolkit.KryptonRichTextBox();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,8 +85,18 @@ namespace CarRentalApp.View.UserControls.Components
             this.panel4.ForeColor = System.Drawing.SystemColors.GrayText;
             this.panel4.Location = new System.Drawing.Point(8, 8);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(493, 504);
+            this.panel4.Size = new System.Drawing.Size(493, 514);
             this.panel4.TabIndex = 2;
+            // 
+            // billDetailsTextBox
+            // 
+            this.billDetailsTextBox.Location = new System.Drawing.Point(50, 319);
+            this.billDetailsTextBox.MaxLength = 2048;
+            this.billDetailsTextBox.Name = "billDetailsTextBox";
+            this.billDetailsTextBox.Size = new System.Drawing.Size(356, 80);
+            this.billDetailsTextBox.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.billDetailsTextBox.TabIndex = 12;
+            this.billDetailsTextBox.Text = "";
             // 
             // billcomputedPriceLabel
             // 
@@ -116,9 +126,9 @@ namespace CarRentalApp.View.UserControls.Components
             this.label9.ForeColor = System.Drawing.Color.Gold;
             this.label9.Location = new System.Drawing.Point(361, 265);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 16);
+            this.label9.Size = new System.Drawing.Size(38, 16);
             this.label9.TabIndex = 8;
-            this.label9.Text = "MAD";
+            this.label9.Text = "CHF";
             // 
             // BillAmountNumericUpDown
             // 
@@ -328,16 +338,6 @@ namespace CarRentalApp.View.UserControls.Components
             this.label5.TabIndex = 1;
             this.label5.Text = "Amount";
             // 
-            // billDetailsTextBox
-            // 
-            this.billDetailsTextBox.Location = new System.Drawing.Point(50, 319);
-            this.billDetailsTextBox.MaxLength = 2048;
-            this.billDetailsTextBox.Name = "billDetailsTextBox";
-            this.billDetailsTextBox.Size = new System.Drawing.Size(356, 80);
-            this.billDetailsTextBox.StateCommon.Content.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.billDetailsTextBox.TabIndex = 12;
-            this.billDetailsTextBox.Text = "";
-            // 
             // RentBillUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -347,7 +347,7 @@ namespace CarRentalApp.View.UserControls.Components
             this.MinimumSize = new System.Drawing.Size(509, 520);
             this.Name = "RentBillUserControl";
             this.Padding = new System.Windows.Forms.Padding(5);
-            this.Size = new System.Drawing.Size(509, 520);
+            this.Size = new System.Drawing.Size(527, 546);
             this.Load += new System.EventHandler(this.RentBillUserControl_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();

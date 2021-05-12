@@ -113,9 +113,9 @@ namespace CarRentalApp.View.UserControls
             this.label6.ForeColor = System.Drawing.Color.Red;
             this.label6.Location = new System.Drawing.Point(185, 321);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 24);
+            this.label6.Size = new System.Drawing.Size(52, 24);
             this.label6.TabIndex = 1;
-            this.label6.Text = "CH";
+            this.label6.Text = "CHF";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label3

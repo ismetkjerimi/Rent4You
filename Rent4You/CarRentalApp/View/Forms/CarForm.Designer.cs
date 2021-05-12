@@ -130,9 +130,9 @@ namespace CarRentalApp.View.Forms
             this.label8.ForeColor = System.Drawing.Color.SeaGreen;
             this.label8.Location = new System.Drawing.Point(460, 294);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(29, 16);
+            this.label8.Size = new System.Drawing.Size(38, 16);
             this.label8.TabIndex = 9;
-            this.label8.Text = "CH";
+            this.label8.Text = "CHF";
             // 
             // carChoosePicturButton
             // 

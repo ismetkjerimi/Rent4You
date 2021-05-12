@@ -116,7 +116,7 @@ namespace CarRentalApp.Core.Utils
                 var leftHeaderParagraph = new Paragraph {Alignment = Element.ALIGN_LEFT};
                 //logo
                 var logo = iTextSharp.text.Image.GetInstance(Resources.app_logo_black, BaseColor.WHITE);
-                var brandName = new Chunk("Rent Luxury");
+                var brandName = new Chunk("Rent4You");
                 leftHeaderParagraph.Add(logo);
                 leftHeaderParagraph.Add(brandName);
                 doc.Add(leftHeaderParagraph);
@@ -230,14 +230,14 @@ namespace CarRentalApp.Core.Utils
                 var leftHeaderParagraph = new Paragraph {Alignment = Element.ALIGN_LEFT};
                 //logo
                 var logo = iTextSharp.text.Image.GetInstance(Resources.app_logo_black, BaseColor.WHITE);
-                var brandName = new Chunk("Rent Luxury");
+                var brandName = new Chunk("Rent4You");
                 leftHeaderParagraph.Add(logo);
                 leftHeaderParagraph.Add(brandName);
                 doc.Add(leftHeaderParagraph);
 
                 doc.Add(new Paragraph(bill.Date.ToString("dd/MM/yyyy"), bodyFont) {Alignment = Element.ALIGN_RIGHT});
 
-                doc.Add(new Paragraph("Rent Luxury Receipt", titleFont) {Alignment = Element.ALIGN_CENTER});
+                doc.Add(new Paragraph("Rent4You Receipt", titleFont) {Alignment = Element.ALIGN_CENTER});
                 //body
                 var billBody = new PdfPTable(2)
                 {
@@ -266,13 +266,13 @@ namespace CarRentalApp.Core.Utils
                 billBody.AddCell(new Phrase("Rent Date End:", boldTableFont));
                 billBody.AddCell(bill.Rent.DateEnd.ToString("dd/MM/yyyy"));
                 billBody.AddCell(new Phrase("Amount:", boldTableFont));
-                billBody.AddCell($"{bill.Amount:N0} MAD");
+                billBody.AddCell($"{bill.Amount:N0} CHF");
                 billBody.AddCell(new Phrase("Details:", boldTableFont));
                 billBody.AddCell(bill.Details);
                 billBody.AddCell(bill.Date.ToString("dd/MM/yyyy"));
                 doc.Add(billBody);
 
-                doc.Add(new Paragraph("Thanks for taking rent with us", endingMessageFont)
+                doc.Add(new Paragraph("Thanks for taking rent with US", endingMessageFont)
                     {Alignment = Element.ALIGN_LEFT});
 
 

@@ -94,7 +94,7 @@ namespace CarRentalApp.View.UserControls
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Location = new System.Drawing.Point(5, 100);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(583, 571);
+            this.panel2.Size = new System.Drawing.Size(765, 665);
             this.panel2.TabIndex = 7;
             // 
             // carDataGridView
@@ -121,7 +121,7 @@ namespace CarRentalApp.View.UserControls
             this.carDataGridView.ReadOnly = true;
             this.carDataGridView.RowTemplate.Height = 50;
             this.carDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.carDataGridView.Size = new System.Drawing.Size(583, 510);
+            this.carDataGridView.Size = new System.Drawing.Size(782, 604);
             this.carDataGridView.TabIndex = 6;
             this.carDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CarDataGridView_CellDoubleClick);
             this.carDataGridView.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.CarsDataGridView_CellFormatting);
@@ -154,7 +154,7 @@ namespace CarRentalApp.View.UserControls
             this.licensePlateDataGridViewTextBoxColumn.HeaderText = "License Plate";
             this.licensePlateDataGridViewTextBoxColumn.Name = "licensePlateDataGridViewTextBoxColumn";
             this.licensePlateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.licensePlateDataGridViewTextBoxColumn.Width = 104;
+            this.licensePlateDataGridViewTextBoxColumn.Width = 96;
             // 
             // classificationDataGridViewTextBoxColumn
             // 
@@ -170,7 +170,7 @@ namespace CarRentalApp.View.UserControls
             this.pricePerDayDataGridViewTextBoxColumn.HeaderText = "Price Per Day";
             this.pricePerDayDataGridViewTextBoxColumn.Name = "pricePerDayDataGridViewTextBoxColumn";
             this.pricePerDayDataGridViewTextBoxColumn.ReadOnly = true;
-            this.pricePerDayDataGridViewTextBoxColumn.Width = 105;
+            this.pricePerDayDataGridViewTextBoxColumn.Width = 79;
             // 
             // isAvailableDataGridViewCheckBoxColumn
             // 
@@ -186,7 +186,7 @@ namespace CarRentalApp.View.UserControls
             this.nextDrainDateDataGridViewTextBoxColumn.HeaderText = "Next Drain Date";
             this.nextDrainDateDataGridViewTextBoxColumn.Name = "nextDrainDateDataGridViewTextBoxColumn";
             this.nextDrainDateDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nextDrainDateDataGridViewTextBoxColumn.Width = 118;
+            this.nextDrainDateDataGridViewTextBoxColumn.Width = 109;
             // 
             // carBindingSource
             // 
@@ -203,7 +203,7 @@ namespace CarRentalApp.View.UserControls
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(583, 61);
+            this.panel5.Size = new System.Drawing.Size(765, 61);
             this.panel5.TabIndex = 5;
             // 
             // searchFilterComboBox
@@ -260,7 +260,6 @@ namespace CarRentalApp.View.UserControls
             // 
             // kryptonHeader1
             // 
-            this.kryptonHeader1.HeaderStyle = ComponentFactory.Krypton.Toolkit.HeaderStyle.Primary;
             this.kryptonHeader1.Location = new System.Drawing.Point(23, 10);
             this.kryptonHeader1.Name = "kryptonHeader1";
             this.kryptonHeader1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
@@ -278,7 +277,7 @@ namespace CarRentalApp.View.UserControls
             this.kryptonPanel1.Name = "kryptonPanel1";
             this.kryptonPanel1.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2010Black;
             this.kryptonPanel1.PanelBackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.HeaderPrimary;
-            this.kryptonPanel1.Size = new System.Drawing.Size(1039, 10);
+            this.kryptonPanel1.Size = new System.Drawing.Size(1296, 10);
             this.kryptonPanel1.TabIndex = 3;
             // 
             // panel1
@@ -288,7 +287,7 @@ namespace CarRentalApp.View.UserControls
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(5, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1039, 100);
+            this.panel1.Size = new System.Drawing.Size(1296, 100);
             this.panel1.TabIndex = 6;
             // 
             // panel3
@@ -299,9 +298,9 @@ namespace CarRentalApp.View.UserControls
             this.panel3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel3.Controls.Add(this.selectedCarEditButton);
             this.panel3.Controls.Add(this.kryptonPanel2);
-            this.panel3.Location = new System.Drawing.Point(612, 100);
+            this.panel3.Location = new System.Drawing.Point(851, 100);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(432, 571);
+            this.panel3.Size = new System.Drawing.Size(430, 665);
             this.panel3.TabIndex = 8;
             // 
             // selectedCarEditButton
@@ -332,12 +331,11 @@ namespace CarRentalApp.View.UserControls
             this.kryptonPanel2.Controls.Add(this.selectedCarAvailabilityLabel);
             this.kryptonPanel2.Controls.Add(this.selectedCarNameLabel);
             this.kryptonPanel2.Controls.Add(this.selectedCarPictureBox);
-            this.kryptonPanel2.Location = new System.Drawing.Point(16, 15);
+            this.kryptonPanel2.Location = new System.Drawing.Point(16, 6);
             this.kryptonPanel2.MaximumSize = new System.Drawing.Size(391, 507);
             this.kryptonPanel2.Name = "kryptonPanel2";
             this.kryptonPanel2.Size = new System.Drawing.Size(391, 507);
             this.kryptonPanel2.StateCommon.Color1 = System.Drawing.SystemColors.Info;
-            this.kryptonPanel2.StateCommon.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.kryptonPanel2.TabIndex = 9;
             // 
             // selectedCarRentsCountLabel
@@ -434,8 +432,9 @@ namespace CarRentalApp.View.UserControls
             this.selectedCarPricePerDayLabel.Name = "selectedCarPricePerDayLabel";
             this.selectedCarPricePerDayLabel.Size = new System.Drawing.Size(121, 18);
             this.selectedCarPricePerDayLabel.TabIndex = 14;
-            this.selectedCarPricePerDayLabel.Text = "2000000.00 MAD";
+            this.selectedCarPricePerDayLabel.Text = "2000000.00 CHF";
             this.selectedCarPricePerDayLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.selectedCarPricePerDayLabel.Click += new System.EventHandler(this.selectedCarPricePerDayLabel_Click);
             // 
             // selectedCarNextDrainDateLabel
             // 
@@ -528,7 +527,7 @@ namespace CarRentalApp.View.UserControls
             this.Controls.Add(this.panel1);
             this.Name = "CarsPageUserControl";
             this.Padding = new System.Windows.Forms.Padding(5, 0, 0, 10);
-            this.Size = new System.Drawing.Size(1044, 681);
+            this.Size = new System.Drawing.Size(1301, 775);
             this.Load += new System.EventHandler(this.CarsPageUserControl_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.carDataGridView)).EndInit();

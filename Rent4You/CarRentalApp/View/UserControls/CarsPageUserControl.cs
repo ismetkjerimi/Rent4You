@@ -46,7 +46,7 @@ namespace CarRentalApp.View.UserControls
             selectedCarClassificationLabel.Text = _selectedCar.Classification.Name;
             selectedCarLicensePlateLabel.Text = _selectedCar.LicensePlate;
             selectedCarDescriptionLabel.Text = _selectedCar.Description;
-            selectedCarPricePerDayLabel.Text = $@"{_selectedCar.PricePerDay:#,0.00} MAD /Day";
+            selectedCarPricePerDayLabel.Text = $@"{_selectedCar.PricePerDay:#,0.00} CH/Day";
             selectedCarRentsCountLabel.Text = _selectedCar.Rents.Count.ToString();
             selectedCarNextDrainDateLabel.Text = $@"{_selectedCar.NextDrainDate:dd/MM/yyyy}";
             selectedCarPurchaseDateLabel.Text = $@"{_selectedCar.PurchaseDate:dd/MM/yyyy}";
@@ -153,10 +153,12 @@ namespace CarRentalApp.View.UserControls
 
         private void CarsDataGridView_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (carDataGridView.Rows[e.RowIndex].DataBoundItem == null)
-           
-                return;
             
+                if (carDataGridView.Rows[e.RowIndex].DataBoundItem == null)
+
+                    return;
+            
+        
 
             //display row index
             var row = carDataGridView.Rows[e.RowIndex];
@@ -170,7 +172,7 @@ namespace CarRentalApp.View.UserControls
             if (carDataGridView.Columns[e.ColumnIndex].DataPropertyName.Equals(nameof(Car.NextDrainDate)))
                 e.Value = string.Format($"{car.NextDrainDate:dd/MM/yyyy}");
             if (carDataGridView.Columns[e.ColumnIndex].DataPropertyName.Equals(nameof(Car.PricePerDay)))
-                e.Value = string.Format($"{car.PricePerDay:N} MAD");
+                e.Value = string.Format($"{car.PricePerDay:N} CH");
         }
 
         private void CarsDataGridView_RowEnter(object sender, DataGridViewCellEventArgs e)
@@ -246,6 +248,11 @@ namespace CarRentalApp.View.UserControls
             var selectedCar = (Car) carDataGridView.Rows[e.RowIndex].DataBoundItem;
             var carForm = new CarForm(FormMode.View, OnChildFromClosed, selectedCar);
             carForm.Show();
+        }
+
+        private void selectedCarPricePerDayLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
