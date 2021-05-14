@@ -53,7 +53,7 @@ namespace CarRentalApp.View.Forms
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Info;
+            this.panel1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panel1.Controls.Add(this.cancelEditButton);
             this.panel1.Controls.Add(this.saveButton);
             this.panel1.Controls.Add(this.validationLabel);
@@ -70,6 +70,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.cancelEditButton.Location = new System.Drawing.Point(202, 252);
             this.cancelEditButton.Name = "cancelEditButton";
+            this.cancelEditButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.cancelEditButton.Size = new System.Drawing.Size(90, 25);
             this.cancelEditButton.TabIndex = 13;
             this.cancelEditButton.Values.Text = "Cancel";
@@ -79,7 +80,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.saveButton.Location = new System.Drawing.Point(31, 252);
             this.saveButton.Name = "saveButton";
-            this.saveButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.Office2007Silver;
+            this.saveButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.saveButton.Size = new System.Drawing.Size(90, 25);
             this.saveButton.TabIndex = 12;
             this.saveButton.Values.Text = "Save";
@@ -121,7 +122,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(28, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 16);
@@ -132,7 +133,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(28, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 16);
@@ -158,9 +159,7 @@ namespace CarRentalApp.View.Forms
             this.classificationDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.classificationDataGridView.Size = new System.Drawing.Size(387, 231);
             this.classificationDataGridView.StateCommon.BackStyle = ComponentFactory.Krypton.Toolkit.PaletteBackStyle.GridBackgroundList;
-            this.classificationDataGridView.StateCommon.DataCell.Content.ImageStyle = ComponentFactory.Krypton.Toolkit.PaletteImageStyle.Inherit;
             this.classificationDataGridView.StateCommon.DataCell.Content.MultiLine = ComponentFactory.Krypton.Toolkit.InheritBool.True;
-            this.classificationDataGridView.StateCommon.DataCell.Content.Trim = ComponentFactory.Krypton.Toolkit.PaletteTextTrim.Inherit;
             this.classificationDataGridView.TabIndex = 1;
             this.classificationDataGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ClassificationDataGridView_CellDoubleClick);
             this.classificationDataGridView.UserDeletedRow += new System.Windows.Forms.DataGridViewRowEventHandler(this.ClassificationDataGridView_UserDeletedRow);
@@ -190,6 +189,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.editButton.Location = new System.Drawing.Point(56, 295);
             this.editButton.Name = "editButton";
+            this.editButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.editButton.Size = new System.Drawing.Size(90, 25);
             this.editButton.TabIndex = 13;
             this.editButton.Values.Text = "Edit";
@@ -219,7 +219,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.ClientSize = new System.Drawing.Size(408, 613);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.RefreshDataGridViewButton);

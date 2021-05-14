@@ -139,14 +139,6 @@
         MOBxosGT4iz9SolEIpFIJNJMpfIXB9T2jE+aeBAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="selectedCarDescriptionLabel.Text" xml:space="preserve">
-    <value>Maecenas leo odio, condimentum id, luctus nec, 
-molestie sed, justo. Pellentesque viverra pede ac diam.
-molestie sed, justo. Pellentesque viverra pede ac diam.
-molestie sed, justo. Pellentesque viverra pede ac diam.
-
- Cras pellentesque volutpat dui.</value>
-  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>

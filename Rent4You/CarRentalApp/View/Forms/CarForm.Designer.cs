@@ -59,7 +59,7 @@ namespace CarRentalApp.View.Forms
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.Info;
+            this.panel1.BackColor = System.Drawing.Color.LightSlateGray;
             this.panel1.Controls.Add(this.carDescriptionTextBox);
             this.panel1.Controls.Add(this.AddNewClassificationButton);
             this.panel1.Controls.Add(this.validationLabel);
@@ -104,6 +104,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.AddNewClassificationButton.Location = new System.Drawing.Point(236, 284);
             this.AddNewClassificationButton.Name = "AddNewClassificationButton";
+            this.AddNewClassificationButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.AddNewClassificationButton.Size = new System.Drawing.Size(42, 25);
             this.AddNewClassificationButton.TabIndex = 11;
             this.AddNewClassificationButton.Values.Text = "add";
@@ -150,7 +151,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.closeButton.Location = new System.Drawing.Point(406, 570);
             this.closeButton.Name = "closeButton";
-            this.closeButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.closeButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.closeButton.Size = new System.Drawing.Size(129, 34);
             this.closeButton.TabIndex = 7;
             this.closeButton.Values.Text = "Close";
@@ -160,7 +161,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.addMoreButton.Location = new System.Drawing.Point(40, 530);
             this.addMoreButton.Name = "addMoreButton";
-            this.addMoreButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.addMoreButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.addMoreButton.Size = new System.Drawing.Size(129, 34);
             this.addMoreButton.TabIndex = 7;
             this.addMoreButton.Values.Text = "Add more";
@@ -170,7 +171,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.cancelEditButton.Location = new System.Drawing.Point(212, 570);
             this.cancelEditButton.Name = "cancelEditButton";
-            this.cancelEditButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.cancelEditButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.cancelEditButton.Size = new System.Drawing.Size(129, 34);
             this.cancelEditButton.TabIndex = 7;
             this.cancelEditButton.Values.Text = "Cancel";
@@ -180,7 +181,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.EditButton.Location = new System.Drawing.Point(212, 530);
             this.EditButton.Name = "EditButton";
-            this.EditButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.EditButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.EditButton.Size = new System.Drawing.Size(129, 34);
             this.EditButton.TabIndex = 7;
             this.EditButton.Values.Text = "Edit";
@@ -190,7 +191,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.saveButton.Location = new System.Drawing.Point(40, 570);
             this.saveButton.Name = "saveButton";
-            this.saveButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.saveButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.saveButton.Size = new System.Drawing.Size(129, 34);
             this.saveButton.TabIndex = 7;
             this.saveButton.Values.Text = "Save";
@@ -244,7 +245,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label6.Location = new System.Drawing.Point(34, 340);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 16);
@@ -255,7 +256,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(300, 270);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(104, 16);
@@ -266,7 +267,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(34, 270);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 16);
@@ -277,7 +278,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label4.Location = new System.Drawing.Point(34, 199);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(117, 16);
@@ -288,7 +289,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(34, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(110, 16);
@@ -306,7 +307,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(34, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(102, 16);
@@ -323,8 +324,9 @@ namespace CarRentalApp.View.Forms
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(34, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 16);

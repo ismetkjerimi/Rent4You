@@ -10,8 +10,8 @@ namespace CarRentalApp.View.Forms
 {
     public partial class MainForm : Form
     {
-        private const int LeftPanelExtendedWidth = 220;
-        private const int LeftPanelCollapsedWidth = 62;
+        private const int LeftPanelExtendedWidth = 300;  //220
+        private const int LeftPanelCollapsedWidth = 62;   //62
         private bool _isCollapsed;
 
         public MainForm()

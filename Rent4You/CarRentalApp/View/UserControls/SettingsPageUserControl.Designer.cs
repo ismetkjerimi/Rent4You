@@ -48,6 +48,7 @@ namespace CarRentalApp.View.UserControls
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.LightSlateGray;
             this.panel3.Controls.Add(this.kryptonPanel1);
             this.panel3.Controls.Add(this.kryptonHeader1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -92,7 +93,7 @@ namespace CarRentalApp.View.UserControls
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.panel1.BackColor = System.Drawing.Color.LightSlateGray;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label3);
@@ -122,7 +123,7 @@ namespace CarRentalApp.View.UserControls
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(34, 321);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(145, 24);
@@ -135,7 +136,7 @@ namespace CarRentalApp.View.UserControls
             this.myRentsCountLabel.BackColor = System.Drawing.SystemColors.Info;
             this.myRentsCountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myRentsCountLabel.ForeColor = System.Drawing.Color.Blue;
-            this.myRentsCountLabel.Location = new System.Drawing.Point(51, 179);
+            this.myRentsCountLabel.Location = new System.Drawing.Point(61, 174);
             this.myRentsCountLabel.MinimumSize = new System.Drawing.Size(350, 110);
             this.myRentsCountLabel.Name = "myRentsCountLabel";
             this.myRentsCountLabel.Size = new System.Drawing.Size(350, 110);
@@ -149,7 +150,7 @@ namespace CarRentalApp.View.UserControls
             this.myRentsIncomeLabel.BackColor = System.Drawing.Color.Azure;
             this.myRentsIncomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.myRentsIncomeLabel.ForeColor = System.Drawing.Color.Gold;
-            this.myRentsIncomeLabel.Location = new System.Drawing.Point(61, 375);
+            this.myRentsIncomeLabel.Location = new System.Drawing.Point(61, 373);
             this.myRentsIncomeLabel.MinimumSize = new System.Drawing.Size(350, 110);
             this.myRentsIncomeLabel.Name = "myRentsIncomeLabel";
             this.myRentsIncomeLabel.Size = new System.Drawing.Size(350, 110);
@@ -161,7 +162,7 @@ namespace CarRentalApp.View.UserControls
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkGray;
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(34, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(286, 24);

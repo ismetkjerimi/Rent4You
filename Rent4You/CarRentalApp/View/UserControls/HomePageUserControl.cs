@@ -60,7 +60,7 @@ namespace CarRentalApp.View.UserControls
 
             rentsCountLabel.Text = rentsList.Count.ToString("NO");
             rentsInPendingCountLabel.Text = rentsInPendingList.Count.ToString("NO");
-           clientsCountLabel.Text = clientList.Count.ToString("NO");  */  
+           clientsCountLabel.Text = clientList.Count.ToString("NO");  */
         }
 
         private void LoadingScreen()
@@ -99,6 +99,11 @@ namespace CarRentalApp.View.UserControls
         }
 
         private void top3ClientListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void monthlyTakingChart_Click(object sender, EventArgs e)
         {
 
         }

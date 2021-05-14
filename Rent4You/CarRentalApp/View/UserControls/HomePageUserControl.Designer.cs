@@ -47,7 +47,6 @@ namespace CarRentalApp.View.UserControls
             this.clientsCountLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.refreshButton = new System.Windows.Forms.Button();
-            this.monthlyTakingChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -56,14 +55,15 @@ namespace CarRentalApp.View.UserControls
             this.top3EmployeeListBox = new ComponentFactory.Krypton.Toolkit.KryptonListBox();
             this.top3CarListBox = new ComponentFactory.Krypton.Toolkit.KryptonListBox();
             this.top3ClientListBox = new ComponentFactory.Krypton.Toolkit.KryptonListBox();
+            this.monthlyTakingChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.label3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.monthlyTakingChart)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.monthlyTakingChart)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -221,31 +221,12 @@ namespace CarRentalApp.View.UserControls
             this.refreshButton.UseVisualStyleBackColor = false;
             this.refreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
-            // monthlyTakingChart
-            // 
-            this.monthlyTakingChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.monthlyTakingChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.monthlyTakingChart.Legends.Add(legend1);
-            this.monthlyTakingChart.Location = new System.Drawing.Point(63, 247);
-            this.monthlyTakingChart.Name = "monthlyTakingChart";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Takings";
-            this.monthlyTakingChart.Series.Add(series1);
-            this.monthlyTakingChart.Size = new System.Drawing.Size(547, 382);
-            this.monthlyTakingChart.TabIndex = 7;
-            this.monthlyTakingChart.Text = "chart1";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label2.Location = new System.Drawing.Point(33, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 31);
@@ -257,7 +238,7 @@ namespace CarRentalApp.View.UserControls
             this.label4.AutoSize = true;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(33, 51);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 25);
@@ -269,7 +250,7 @@ namespace CarRentalApp.View.UserControls
             this.label6.AutoSize = true;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(33, 165);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 25);
@@ -281,7 +262,7 @@ namespace CarRentalApp.View.UserControls
             this.label8.AutoSize = true;
             this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label8.Location = new System.Drawing.Point(33, 286);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(131, 25);
@@ -292,6 +273,7 @@ namespace CarRentalApp.View.UserControls
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.top3EmployeeListBox);
             this.panel1.Controls.Add(this.label2);
@@ -342,10 +324,32 @@ namespace CarRentalApp.View.UserControls
             this.top3ClientListBox.TabIndex = 9;
             this.top3ClientListBox.SelectedIndexChanged += new System.EventHandler(this.top3ClientListBox_SelectedIndexChanged);
             // 
+            // monthlyTakingChart
+            // 
+            this.monthlyTakingChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea1.Name = "ChartArea1";
+            this.monthlyTakingChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.monthlyTakingChart.Legends.Add(legend1);
+            this.monthlyTakingChart.Location = new System.Drawing.Point(63, 247);
+            this.monthlyTakingChart.Name = "monthlyTakingChart";
+            this.monthlyTakingChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Pastel;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Takings";
+            this.monthlyTakingChart.Series.Add(series1);
+            this.monthlyTakingChart.Size = new System.Drawing.Size(547, 382);
+            this.monthlyTakingChart.TabIndex = 7;
+            this.monthlyTakingChart.Text = "chart1";
+            this.monthlyTakingChart.Click += new System.EventHandler(this.monthlyTakingChart_Click);
+            // 
             // HomePageUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSlateGray;
             this.Controls.Add(this.monthlyTakingChart);
             this.Controls.Add(this.refreshButton);
             this.Controls.Add(this.panel3);
@@ -364,9 +368,9 @@ namespace CarRentalApp.View.UserControls
             this.label3.ResumeLayout(false);
             this.label3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.monthlyTakingChart)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.monthlyTakingChart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -386,7 +390,6 @@ namespace CarRentalApp.View.UserControls
         private Label clientsCountLabel;
         private Label label1;
         private Button refreshButton;
-        private System.Windows.Forms.DataVisualization.Charting.Chart monthlyTakingChart;
         private Label label2;
         private Label label4;
         private Label label6;
@@ -395,5 +398,6 @@ namespace CarRentalApp.View.UserControls
         private ComponentFactory.Krypton.Toolkit.KryptonListBox top3EmployeeListBox;
         private ComponentFactory.Krypton.Toolkit.KryptonListBox top3ClientListBox;
         private ComponentFactory.Krypton.Toolkit.KryptonListBox top3CarListBox;
+        private System.Windows.Forms.DataVisualization.Charting.Chart monthlyTakingChart;
     }
 }

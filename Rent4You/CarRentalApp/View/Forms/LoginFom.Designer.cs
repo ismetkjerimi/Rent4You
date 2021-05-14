@@ -41,6 +41,7 @@ namespace CarRentalApp.View.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.validationLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
             this.panel1.SuspendLayout();
@@ -58,7 +59,7 @@ namespace CarRentalApp.View.Forms
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.validationLabel);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(3, 5);
+            this.panel2.Location = new System.Drawing.Point(13, 34);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(449, 543);
             this.panel2.TabIndex = 2;
@@ -159,11 +160,24 @@ namespace CarRentalApp.View.Forms
             this.panel1.BackColor = System.Drawing.Color.LightSlateGray;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(479, 110);
+            this.panel1.Location = new System.Drawing.Point(452, 81);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(462, 555);
+            this.panel1.Size = new System.Drawing.Size(482, 584);
             this.panel1.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.InfoText;
+            this.textBox1.Font = new System.Drawing.Font("Georgia", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox1.Location = new System.Drawing.Point(115, 8);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(242, 24);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "LOGIN";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // LoginFom
             // 
@@ -187,6 +201,7 @@ namespace CarRentalApp.View.Forms
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -201,6 +216,7 @@ namespace CarRentalApp.View.Forms
         private TextBox passwordTextBox;
         private Button loginButton;
         private PictureBox pictureBox_Logo;
+        private TextBox textBox1;
     }
 }
 

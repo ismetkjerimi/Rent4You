@@ -33,12 +33,12 @@ namespace CarRentalApp.View.UserControls
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsersPageUserControl));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel1 = new System.Windows.Forms.Panel();
             this.kryptonPanel1 = new ComponentFactory.Krypton.Toolkit.KryptonPanel();
             this.kryptonHeader1 = new ComponentFactory.Krypton.Toolkit.KryptonHeader();
@@ -118,7 +118,7 @@ namespace CarRentalApp.View.UserControls
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BackColor = System.Drawing.SystemColors.Control;
+            this.panel4.BackColor = System.Drawing.Color.DarkGray;
             this.panel4.Controls.Add(this.userRoleDistributionChart);
             this.panel4.Controls.Add(this.userRankingChart);
             this.panel4.Controls.Add(this.kryptonLabel3);
@@ -137,17 +137,17 @@ namespace CarRentalApp.View.UserControls
             // 
             this.userRoleDistributionChart.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea1.Name = "ChartArea1";
-            this.userRoleDistributionChart.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.userRoleDistributionChart.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.userRoleDistributionChart.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.userRoleDistributionChart.Legends.Add(legend5);
             this.userRoleDistributionChart.Location = new System.Drawing.Point(16, 245);
             this.userRoleDistributionChart.Name = "userRoleDistributionChart";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.Legend = "Legend1";
-            series1.Name = "Roles";
-            this.userRoleDistributionChart.Series.Add(series1);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series5.Legend = "Legend1";
+            series5.Name = "Roles";
+            this.userRoleDistributionChart.Series.Add(series5);
             this.userRoleDistributionChart.Size = new System.Drawing.Size(359, 223);
             this.userRoleDistributionChart.TabIndex = 6;
             this.userRoleDistributionChart.Text = "chart1";
@@ -157,16 +157,16 @@ namespace CarRentalApp.View.UserControls
             this.userRankingChart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea2.Name = "ChartArea1";
-            this.userRankingChart.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.userRankingChart.Legends.Add(legend2);
+            chartArea6.Name = "ChartArea1";
+            this.userRankingChart.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.userRankingChart.Legends.Add(legend6);
             this.userRankingChart.Location = new System.Drawing.Point(16, 17);
             this.userRankingChart.Name = "userRankingChart";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Rents";
-            this.userRankingChart.Series.Add(series2);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "Rents";
+            this.userRankingChart.Series.Add(series6);
             this.userRankingChart.Size = new System.Drawing.Size(359, 209);
             this.userRankingChart.TabIndex = 6;
             // 
@@ -251,7 +251,7 @@ namespace CarRentalApp.View.UserControls
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel3.BackColor = System.Drawing.SystemColors.Control;
+            this.panel3.BackColor = System.Drawing.Color.LightSlateGray;
             this.panel3.Controls.Add(this.userDataGridView);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.ForeColor = System.Drawing.SystemColors.Window;

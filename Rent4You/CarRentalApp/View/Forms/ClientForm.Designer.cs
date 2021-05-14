@@ -78,7 +78,7 @@ namespace CarRentalApp.View.Forms
             // 
             // detailsRightPanel
             // 
-            this.detailsRightPanel.BackColor = System.Drawing.SystemColors.Control;
+            this.detailsRightPanel.BackColor = System.Drawing.Color.LightSlateGray;
             this.detailsRightPanel.Controls.Add(this.kryptonMonthCalendar1);
             this.detailsRightPanel.Controls.Add(this.fullSizecloseButton);
             this.detailsRightPanel.Controls.Add(this.label10);
@@ -88,9 +88,9 @@ namespace CarRentalApp.View.Forms
             this.detailsRightPanel.Controls.Add(this.helpLabel);
             this.detailsRightPanel.Controls.Add(this.clientRentsDataGridView);
             this.detailsRightPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.detailsRightPanel.Location = new System.Drawing.Point(516, 0);
+            this.detailsRightPanel.Location = new System.Drawing.Point(524, 0);
             this.detailsRightPanel.Name = "detailsRightPanel";
-            this.detailsRightPanel.Size = new System.Drawing.Size(559, 685);
+            this.detailsRightPanel.Size = new System.Drawing.Size(559, 706);
             this.detailsRightPanel.TabIndex = 0;
             // 
             // kryptonMonthCalendar1
@@ -105,7 +105,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.fullSizecloseButton.Location = new System.Drawing.Point(226, 498);
             this.fullSizecloseButton.Name = "fullSizecloseButton";
-            this.fullSizecloseButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.fullSizecloseButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.fullSizecloseButton.Size = new System.Drawing.Size(129, 33);
             this.fullSizecloseButton.TabIndex = 8;
             this.fullSizecloseButton.Values.Text = "Close";
@@ -114,8 +114,9 @@ namespace CarRentalApp.View.Forms
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Lavender;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Blue;
+            this.label10.ForeColor = System.Drawing.Color.RoyalBlue;
             this.label10.Location = new System.Drawing.Point(122, 468);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(59, 15);
@@ -126,6 +127,7 @@ namespace CarRentalApp.View.Forms
             // clientRentsCountLabel
             // 
             this.clientRentsCountLabel.AutoSize = true;
+            this.clientRentsCountLabel.BackColor = System.Drawing.Color.Lavender;
             this.clientRentsCountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientRentsCountLabel.ForeColor = System.Drawing.Color.LimeGreen;
             this.clientRentsCountLabel.Location = new System.Drawing.Point(122, 449);
@@ -137,6 +139,7 @@ namespace CarRentalApp.View.Forms
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.AliceBlue;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label9.Location = new System.Drawing.Point(3, 468);
@@ -148,6 +151,7 @@ namespace CarRentalApp.View.Forms
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.AliceBlue;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label8.Location = new System.Drawing.Point(3, 449);
@@ -159,12 +163,13 @@ namespace CarRentalApp.View.Forms
             // helpLabel
             // 
             this.helpLabel.AutoSize = true;
-            this.helpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.helpLabel.ForeColor = System.Drawing.Color.Maroon;
             this.helpLabel.Location = new System.Drawing.Point(3, 202);
             this.helpLabel.Name = "helpLabel";
-            this.helpLabel.Size = new System.Drawing.Size(184, 15);
+            this.helpLabel.Size = new System.Drawing.Size(216, 15);
             this.helpLabel.TabIndex = 11;
-            this.helpLabel.Text = "* key del or suppr to delete a row\r\n";
+            this.helpLabel.Text = " Use Key \'Delete\' to delete a row";
             // 
             // clientRentsDataGridView
             // 
@@ -274,7 +279,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(22, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 16);
@@ -285,7 +290,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(22, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 16);
@@ -296,7 +301,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label3.ForeColor = System.Drawing.SystemColors.Control;
             this.label3.Location = new System.Drawing.Point(22, 133);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 16);
@@ -307,7 +312,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(228, 133);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(118, 16);
@@ -318,7 +323,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(22, 186);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 16);
@@ -329,7 +334,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(22, 278);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(66, 16);
@@ -340,7 +345,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label7.Location = new System.Drawing.Point(228, 186);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(62, 16);
@@ -349,7 +354,7 @@ namespace CarRentalApp.View.Forms
             // 
             // formLeftPanel
             // 
-            this.formLeftPanel.BackColor = System.Drawing.SystemColors.Info;
+            this.formLeftPanel.BackColor = System.Drawing.Color.LightSlateGray;
             this.formLeftPanel.Controls.Add(this.clientAddressTextBox);
             this.formLeftPanel.Controls.Add(this.normalSizecloseButton);
             this.formLeftPanel.Controls.Add(this.validationLabel);
@@ -373,7 +378,7 @@ namespace CarRentalApp.View.Forms
             this.formLeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.formLeftPanel.Location = new System.Drawing.Point(0, 0);
             this.formLeftPanel.Name = "formLeftPanel";
-            this.formLeftPanel.Size = new System.Drawing.Size(415, 685);
+            this.formLeftPanel.Size = new System.Drawing.Size(415, 706);
             this.formLeftPanel.TabIndex = 0;
             // 
             // clientAddressTextBox
@@ -389,7 +394,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.normalSizecloseButton.Location = new System.Drawing.Point(271, 449);
             this.normalSizecloseButton.Name = "normalSizecloseButton";
-            this.normalSizecloseButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.normalSizecloseButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.normalSizecloseButton.Size = new System.Drawing.Size(102, 34);
             this.normalSizecloseButton.TabIndex = 8;
             this.normalSizecloseButton.Values.Text = "Close";
@@ -399,7 +404,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.validationLabel.AutoSize = true;
             this.validationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.validationLabel.ForeColor = System.Drawing.Color.Red;
+            this.validationLabel.ForeColor = System.Drawing.Color.DarkRed;
             this.validationLabel.Location = new System.Drawing.Point(22, 405);
             this.validationLabel.Name = "validationLabel";
             this.validationLabel.Size = new System.Drawing.Size(192, 16);
@@ -412,7 +417,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.editButton.Location = new System.Drawing.Point(271, 497);
             this.editButton.Name = "editButton";
-            this.editButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.editButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.editButton.Size = new System.Drawing.Size(102, 34);
             this.editButton.TabIndex = 9;
             this.editButton.Values.Text = "Edit";
@@ -422,7 +427,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.addMoreButton.Location = new System.Drawing.Point(25, 498);
             this.addMoreButton.Name = "addMoreButton";
-            this.addMoreButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.addMoreButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.addMoreButton.Size = new System.Drawing.Size(102, 34);
             this.addMoreButton.TabIndex = 9;
             this.addMoreButton.Values.Text = "Add more";
@@ -432,7 +437,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.CancelEditButton.Location = new System.Drawing.Point(150, 449);
             this.CancelEditButton.Name = "CancelEditButton";
-            this.CancelEditButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.CancelEditButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.CancelEditButton.Size = new System.Drawing.Size(102, 34);
             this.CancelEditButton.TabIndex = 10;
             this.CancelEditButton.Values.Text = "Cancel";
@@ -442,7 +447,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.saveButton.Location = new System.Drawing.Point(25, 449);
             this.saveButton.Name = "saveButton";
-            this.saveButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.ProfessionalOffice2003;
+            this.saveButton.PaletteMode = ComponentFactory.Krypton.Toolkit.PaletteMode.SparkleOrange;
             this.saveButton.Size = new System.Drawing.Size(102, 34);
             this.saveButton.TabIndex = 10;
             this.saveButton.Values.Text = "Save";
@@ -507,7 +512,7 @@ namespace CarRentalApp.View.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1075, 685);
+            this.ClientSize = new System.Drawing.Size(1083, 706);
             this.Controls.Add(this.formLeftPanel);
             this.Controls.Add(this.detailsRightPanel);
             this.MaximizeBox = false;
