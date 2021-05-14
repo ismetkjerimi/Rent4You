@@ -67,15 +67,15 @@ namespace CarRentalApp.View.Forms
             // 
             this.leftPanel.BackColor = System.Drawing.Color.Black;
             this.leftPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.leftPanel.Controls.Add(this.userInfoPanel);
             this.leftPanel.Controls.Add(this.menuButton);
+            this.leftPanel.Controls.Add(this.userInfoPanel);
             this.leftPanel.Controls.Add(this.menuPanel);
             this.leftPanel.Controls.Add(this.panel5);
             this.leftPanel.Controls.Add(this.infoPanel);
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftPanel.Location = new System.Drawing.Point(0, 0);
             this.leftPanel.Name = "leftPanel";
-            this.leftPanel.Size = new System.Drawing.Size(307, 1139);
+            this.leftPanel.Size = new System.Drawing.Size(396, 1139);
             this.leftPanel.TabIndex = 0;
             this.leftPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.leftPanel_Paint);
             // 
@@ -87,9 +87,9 @@ namespace CarRentalApp.View.Forms
             this.userInfoPanel.Controls.Add(this.appUserRoleLabel);
             this.userInfoPanel.Controls.Add(this.label2);
             this.userInfoPanel.Controls.Add(this.appUserNameLabel);
-            this.userInfoPanel.Location = new System.Drawing.Point(7, 317);
+            this.userInfoPanel.Location = new System.Drawing.Point(10, 334);
             this.userInfoPanel.Name = "userInfoPanel";
-            this.userInfoPanel.Size = new System.Drawing.Size(203, 42);
+            this.userInfoPanel.Size = new System.Drawing.Size(181, 32);
             this.userInfoPanel.TabIndex = 1;
             // 
             // appUserRoleLabel
@@ -99,12 +99,12 @@ namespace CarRentalApp.View.Forms
             this.appUserRoleLabel.AutoSize = true;
             this.appUserRoleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.appUserRoleLabel.ForeColor = System.Drawing.Color.White;
-            this.appUserRoleLabel.Location = new System.Drawing.Point(85, 5);
+            this.appUserRoleLabel.Location = new System.Drawing.Point(63, 2);
             this.appUserRoleLabel.MinimumSize = new System.Drawing.Size(118, 15);
             this.appUserRoleLabel.Name = "appUserRoleLabel";
             this.appUserRoleLabel.Size = new System.Drawing.Size(118, 15);
             this.appUserRoleLabel.TabIndex = 3;
-            this.appUserRoleLabel.Text = "Admin";
+            this.appUserRoleLabel.Text = "ADMINISTRATOR";
             this.appUserRoleLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.appUserRoleLabel.Click += new System.EventHandler(this.appUserRoleLabel_Click);
             // 
@@ -126,13 +126,13 @@ namespace CarRentalApp.View.Forms
             // 
             this.appUserNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.appUserNameLabel.BackColor = System.Drawing.Color.Maroon;
+            this.appUserNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.appUserNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.appUserNameLabel.ForeColor = System.Drawing.Color.White;
             this.appUserNameLabel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.appUserNameLabel.Location = new System.Drawing.Point(3, 1);
+            this.appUserNameLabel.Location = new System.Drawing.Point(13, 1);
             this.appUserNameLabel.Name = "appUserNameLabel";
-            this.appUserNameLabel.Size = new System.Drawing.Size(45, 24);
+            this.appUserNameLabel.Size = new System.Drawing.Size(45, 14);
             this.appUserNameLabel.TabIndex = 3;
             this.appUserNameLabel.Text = "Ismet";
             this.appUserNameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -149,10 +149,10 @@ namespace CarRentalApp.View.Forms
             this.menuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuButton.ForeColor = System.Drawing.Color.White;
             this.menuButton.Image = ((System.Drawing.Image)(resources.GetObject("menuButton.Image")));
-            this.menuButton.Location = new System.Drawing.Point(261, 321);
+            this.menuButton.Location = new System.Drawing.Point(348, 334);
             this.menuButton.Name = "menuButton";
             this.menuButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.menuButton.Size = new System.Drawing.Size(38, 38);
+            this.menuButton.Size = new System.Drawing.Size(38, 32);
             this.menuButton.TabIndex = 2;
             this.menuButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.menuButton.UseVisualStyleBackColor = false;
@@ -173,9 +173,9 @@ namespace CarRentalApp.View.Forms
             this.menuPanel.Controls.Add(this.carsMenuButton);
             this.menuPanel.Controls.Add(this.rentsMenuButton);
             this.menuPanel.Controls.Add(this.datetimeLabel);
-            this.menuPanel.Location = new System.Drawing.Point(2, 372);
+            this.menuPanel.Location = new System.Drawing.Point(2, 394);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(298, 760);
+            this.menuPanel.Size = new System.Drawing.Size(387, 738);
             this.menuPanel.TabIndex = 2;
             // 
             // billsMenuButton
@@ -347,7 +347,7 @@ namespace CarRentalApp.View.Forms
             this.datetimeLabel.BackColor = System.Drawing.Color.Transparent;
             this.datetimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datetimeLabel.ForeColor = System.Drawing.Color.Silver;
-            this.datetimeLabel.Location = new System.Drawing.Point(0, 727);
+            this.datetimeLabel.Location = new System.Drawing.Point(0, 705);
             this.datetimeLabel.Margin = new System.Windows.Forms.Padding(0);
             this.datetimeLabel.Name = "datetimeLabel";
             this.datetimeLabel.Size = new System.Drawing.Size(138, 16);
@@ -364,7 +364,7 @@ namespace CarRentalApp.View.Forms
             this.panel5.Controls.Add(this.sidePanel);
             this.panel5.Location = new System.Drawing.Point(0, 280);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(303, 31);
+            this.panel5.Size = new System.Drawing.Size(392, 31);
             this.panel5.TabIndex = 1;
             // 
             // sidePanel
@@ -372,7 +372,7 @@ namespace CarRentalApp.View.Forms
             this.sidePanel.BackColor = System.Drawing.Color.Black;
             this.sidePanel.Location = new System.Drawing.Point(0, 0);
             this.sidePanel.Name = "sidePanel";
-            this.sidePanel.Size = new System.Drawing.Size(260, 31);
+            this.sidePanel.Size = new System.Drawing.Size(243, 31);
             this.sidePanel.TabIndex = 4;
             // 
             // infoPanel
@@ -382,7 +382,7 @@ namespace CarRentalApp.View.Forms
             this.infoPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.infoPanel.Location = new System.Drawing.Point(0, 0);
             this.infoPanel.Name = "infoPanel";
-            this.infoPanel.Size = new System.Drawing.Size(303, 236);
+            this.infoPanel.Size = new System.Drawing.Size(392, 236);
             this.infoPanel.TabIndex = 1;
             // 
             // pictureBox1
@@ -393,7 +393,7 @@ namespace CarRentalApp.View.Forms
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(7, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(290, 221);
+            this.pictureBox1.Size = new System.Drawing.Size(379, 221);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -411,9 +411,9 @@ namespace CarRentalApp.View.Forms
             // 
             this.contentPannel.BackColor = System.Drawing.SystemColors.Control;
             this.contentPannel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contentPannel.Location = new System.Drawing.Point(307, 0);
+            this.contentPannel.Location = new System.Drawing.Point(396, 0);
             this.contentPannel.Name = "contentPannel";
-            this.contentPannel.Size = new System.Drawing.Size(1571, 1139);
+            this.contentPannel.Size = new System.Drawing.Size(1482, 1139);
             this.contentPannel.TabIndex = 1;
             // 
             // MainForm
