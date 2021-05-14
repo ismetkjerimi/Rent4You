@@ -17,7 +17,7 @@ namespace CarRentalApp.View.UserControls
         {
             myRentsCountLabel.Text = Program.CurrentUser.Rents.Count.ToString("N0");
             var amounts = Program.CurrentUser.Rents.Select(r => r.Bill).Where(b => b != null).Sum(b => b.Amount);
-            myRentsIncomeLabel.Text = $@"{amounts:N2} MAD";
+            myRentsIncomeLabel.Text = $@"{amounts:N2} CHF";
             myRentsCountLabel.MinimumSize = myRentsIncomeLabel.Size;
         }
 

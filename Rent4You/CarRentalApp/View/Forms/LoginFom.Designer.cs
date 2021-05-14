@@ -32,8 +32,8 @@ namespace CarRentalApp.View.Forms
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginFom));
-            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox_Logo = new System.Windows.Forms.PictureBox();
             this.loginButton = new System.Windows.Forms.Button();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
@@ -42,24 +42,15 @@ namespace CarRentalApp.View.Forms
             this.validationLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.Info;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(171, 9);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(4);
-            this.label2.Size = new System.Drawing.Size(227, 37);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Please login here";
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.pictureBox_Logo);
             this.panel2.Controls.Add(this.loginButton);
             this.panel2.Controls.Add(this.passwordTextBox);
             this.panel2.Controls.Add(this.usernameTextBox);
@@ -67,33 +58,47 @@ namespace CarRentalApp.View.Forms
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.validationLabel);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(77, 49);
+            this.panel2.Location = new System.Drawing.Point(3, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(421, 430);
+            this.panel2.Size = new System.Drawing.Size(449, 543);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // pictureBox_Logo
+            // 
+            this.pictureBox_Logo.BackColor = System.Drawing.Color.Black;
+            this.pictureBox_Logo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox_Logo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Logo.Image")));
+            this.pictureBox_Logo.Location = new System.Drawing.Point(100, 18);
+            this.pictureBox_Logo.Name = "pictureBox_Logo";
+            this.pictureBox_Logo.Size = new System.Drawing.Size(242, 143);
+            this.pictureBox_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox_Logo.TabIndex = 5;
+            this.pictureBox_Logo.TabStop = false;
             // 
             // loginButton
             // 
+            this.loginButton.BackColor = System.Drawing.Color.LightSlateGray;
             this.loginButton.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.loginButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gold;
-            this.loginButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.loginButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
             this.loginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.loginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginButton.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.loginButton.Location = new System.Drawing.Point(113, 262);
+            this.loginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.loginButton.Location = new System.Drawing.Point(115, 383);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(214, 43);
             this.loginButton.TabIndex = 3;
             this.loginButton.Text = "Login";
-            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.BackColor = System.Drawing.SystemColors.Info;
-            this.passwordTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.passwordTextBox.Location = new System.Drawing.Point(70, 177);
+            this.passwordTextBox.BackColor = System.Drawing.SystemColors.Desktop;
+            this.passwordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTextBox.ForeColor = System.Drawing.Color.White;
+            this.passwordTextBox.Location = new System.Drawing.Point(70, 295);
             this.passwordTextBox.MaxLength = 64;
             this.passwordTextBox.MinimumSize = new System.Drawing.Size(300, 30);
             this.passwordTextBox.Name = "passwordTextBox";
@@ -103,10 +108,10 @@ namespace CarRentalApp.View.Forms
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.BackColor = System.Drawing.SystemColors.Info;
-            this.usernameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.usernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameTextBox.Location = new System.Drawing.Point(70, 101);
+            this.usernameTextBox.BackColor = System.Drawing.Color.Black;
+            this.usernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameTextBox.ForeColor = System.Drawing.Color.White;
+            this.usernameTextBox.Location = new System.Drawing.Point(69, 216);
             this.usernameTextBox.MaxLength = 64;
             this.usernameTextBox.MinimumSize = new System.Drawing.Size(300, 30);
             this.usernameTextBox.Name = "usernameTextBox";
@@ -117,8 +122,8 @@ namespace CarRentalApp.View.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label4.Location = new System.Drawing.Point(67, 146);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(66, 263);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 18);
             this.label4.TabIndex = 0;
@@ -128,8 +133,8 @@ namespace CarRentalApp.View.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label3.Location = new System.Drawing.Point(66, 64);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(67, 181);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 18);
             this.label3.TabIndex = 0;
@@ -140,47 +145,53 @@ namespace CarRentalApp.View.Forms
             this.validationLabel.AutoSize = true;
             this.validationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.validationLabel.ForeColor = System.Drawing.Color.Red;
-            this.validationLabel.Location = new System.Drawing.Point(68, 220);
+            this.validationLabel.Location = new System.Drawing.Point(67, 324);
             this.validationLabel.Name = "validationLabel";
-            this.validationLabel.Size = new System.Drawing.Size(237, 16);
+            this.validationLabel.Size = new System.Drawing.Size(228, 16);
             this.validationLabel.TabIndex = 4;
-            this.validationLabel.Text = "username or password not valide";
+            this.validationLabel.Text = "username or password not valid";
             this.validationLabel.UseMnemonic = false;
             this.validationLabel.Visible = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.BackColor = System.Drawing.Color.LightSlateGray;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(169, 41);
+            this.panel1.Location = new System.Drawing.Point(479, 110);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(575, 550);
+            this.panel1.Size = new System.Drawing.Size(462, 555);
             this.panel1.TabIndex = 1;
             // 
             // LoginFom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1276, 735);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.GrayText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(1024, 576);
             this.Name = "LoginFom";
             this.Opacity = 0.99D;
-            this.Text = "Rent Luxury";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Text = "Rent4You";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.LoginFom_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Logo)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Label label2;
         private Panel panel2;
         private Label label4;
         private Label label3;
@@ -189,6 +200,7 @@ namespace CarRentalApp.View.Forms
         private TextBox usernameTextBox;
         private TextBox passwordTextBox;
         private Button loginButton;
+        private PictureBox pictureBox_Logo;
     }
 }
 

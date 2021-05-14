@@ -311,7 +311,10 @@ namespace CarRentalApp.View.Forms
 
         }
 
-       
+        private void clientPhoneTextBox_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 
 

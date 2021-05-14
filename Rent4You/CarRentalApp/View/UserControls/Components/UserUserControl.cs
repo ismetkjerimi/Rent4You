@@ -81,7 +81,7 @@ namespace CarRentalApp.View.UserControls.Components
                 return false;
             }
 
-            if (userPhoneTextBox.Text.Trim().Length != 15)
+            if (userPhoneTextBox.Text.Trim().Length != 14)
             {
                 OnValidating("*Phone number is not valid");
                 return false;

@@ -39,8 +39,8 @@ namespace CarRentalApp.View.UserControls
         }
 
         private void UpdateIndicatorUi()
-        {
-           var clientList = _unitOfWork.Clients.GetAll().Select(c => new {c.Id, c.FullName, RentCount = c.Rents.Count})
+        { /*
+           var clientList = _unitOfWork.Clients.GetAll().Select(c => new {c.Id, c.FullName, RentCount = c.Rents.Count })
                 .ToList();
           var top3Client = clientList.AsParallel().OrderByDescending(c => c.RentCount).Take(3).ToList();
             
@@ -55,12 +55,12 @@ namespace CarRentalApp.View.UserControls
             top3CarListBox.DataSource = top3Cars;
            top3EmployeeListBox.DataSource = top3User;
             
-            var rentsList = _unitOfWork.Rents.GetAll().ToList();  
+           var rentsList = _unitOfWork.Rents.GetAll().ToList();  
             var rentsInPendingList = rentsList.AsParallel().Where(r => r.State == RentState.Pending).ToList(); 
 
-            rentsCountLabel.Text = rentsList.Count.ToString("N0");
-            rentsInPendingCountLabel.Text = rentsInPendingList.Count.ToString("N0");
-           clientsCountLabel.Text = clientList.Count.ToString("N0");  
+            rentsCountLabel.Text = rentsList.Count.ToString("NO");
+            rentsInPendingCountLabel.Text = rentsInPendingList.Count.ToString("NO");
+           clientsCountLabel.Text = clientList.Count.ToString("NO");  */  
         }
 
         private void LoadingScreen()
@@ -94,6 +94,11 @@ namespace CarRentalApp.View.UserControls
         }
 
         private void label3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void top3ClientListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

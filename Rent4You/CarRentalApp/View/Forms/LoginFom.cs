@@ -47,7 +47,7 @@ namespace CarRentalApp.View.Forms
         private void LoginButton_Click(object sender, EventArgs e)
         {
             if (!AuthUser()) return;
-//            FakeLogin();
+
 
             var mainForm = new MainForm {Location = Location, StartPosition = FormStartPosition.Manual};
             mainForm.Show();
@@ -77,6 +77,14 @@ namespace CarRentalApp.View.Forms
             return true;
         }
 
-       
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void LoginFom_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

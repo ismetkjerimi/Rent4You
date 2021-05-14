@@ -65,7 +65,8 @@ namespace CarRentalApp.View.Forms
             // 
             // leftPanel
             // 
-            this.leftPanel.BackColor = System.Drawing.Color.DimGray;
+            this.leftPanel.BackColor = System.Drawing.Color.Black;
+            this.leftPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.leftPanel.Controls.Add(this.userInfoPanel);
             this.leftPanel.Controls.Add(this.menuButton);
             this.leftPanel.Controls.Add(this.menuPanel);
@@ -74,19 +75,19 @@ namespace CarRentalApp.View.Forms
             this.leftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftPanel.Location = new System.Drawing.Point(0, 0);
             this.leftPanel.Name = "leftPanel";
-            this.leftPanel.Size = new System.Drawing.Size(307, 1063);
+            this.leftPanel.Size = new System.Drawing.Size(307, 1139);
             this.leftPanel.TabIndex = 0;
             this.leftPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.leftPanel_Paint);
             // 
             // userInfoPanel
             // 
             this.userInfoPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.userInfoPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.userInfoPanel.BackColor = System.Drawing.Color.Maroon;
             this.userInfoPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.userInfoPanel.Controls.Add(this.appUserRoleLabel);
             this.userInfoPanel.Controls.Add(this.label2);
             this.userInfoPanel.Controls.Add(this.appUserNameLabel);
-            this.userInfoPanel.Location = new System.Drawing.Point(33, 236);
+            this.userInfoPanel.Location = new System.Drawing.Point(7, 317);
             this.userInfoPanel.Name = "userInfoPanel";
             this.userInfoPanel.Size = new System.Drawing.Size(203, 42);
             this.userInfoPanel.TabIndex = 1;
@@ -98,7 +99,7 @@ namespace CarRentalApp.View.Forms
             this.appUserRoleLabel.AutoSize = true;
             this.appUserRoleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.appUserRoleLabel.ForeColor = System.Drawing.Color.White;
-            this.appUserRoleLabel.Location = new System.Drawing.Point(82, 5);
+            this.appUserRoleLabel.Location = new System.Drawing.Point(85, 5);
             this.appUserRoleLabel.MinimumSize = new System.Drawing.Size(118, 15);
             this.appUserRoleLabel.Name = "appUserRoleLabel";
             this.appUserRoleLabel.Size = new System.Drawing.Size(118, 15);
@@ -125,7 +126,7 @@ namespace CarRentalApp.View.Forms
             // 
             this.appUserNameLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.appUserNameLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.appUserNameLabel.BackColor = System.Drawing.Color.Maroon;
             this.appUserNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.appUserNameLabel.ForeColor = System.Drawing.Color.White;
             this.appUserNameLabel.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -148,7 +149,7 @@ namespace CarRentalApp.View.Forms
             this.menuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuButton.ForeColor = System.Drawing.Color.White;
             this.menuButton.Image = ((System.Drawing.Image)(resources.GetObject("menuButton.Image")));
-            this.menuButton.Location = new System.Drawing.Point(263, 236);
+            this.menuButton.Location = new System.Drawing.Point(261, 321);
             this.menuButton.Name = "menuButton";
             this.menuButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.menuButton.Size = new System.Drawing.Size(38, 38);
@@ -162,7 +163,8 @@ namespace CarRentalApp.View.Forms
             this.menuPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.menuPanel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.menuPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.menuPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.menuPanel.Controls.Add(this.billsMenuButton);
             this.menuPanel.Controls.Add(this.settingsMenuButton);
             this.menuPanel.Controls.Add(this.homeMenuButton);
@@ -171,27 +173,27 @@ namespace CarRentalApp.View.Forms
             this.menuPanel.Controls.Add(this.carsMenuButton);
             this.menuPanel.Controls.Add(this.rentsMenuButton);
             this.menuPanel.Controls.Add(this.datetimeLabel);
-            this.menuPanel.Location = new System.Drawing.Point(2, 352);
+            this.menuPanel.Location = new System.Drawing.Point(2, 372);
             this.menuPanel.Name = "menuPanel";
-            this.menuPanel.Size = new System.Drawing.Size(302, 708);
+            this.menuPanel.Size = new System.Drawing.Size(298, 760);
             this.menuPanel.TabIndex = 2;
             // 
             // billsMenuButton
             // 
-            this.billsMenuButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.billsMenuButton.BackColor = System.Drawing.Color.SteelBlue;
             this.billsMenuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.billsMenuButton.FlatAppearance.BorderSize = 0;
             this.billsMenuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.billsMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(42)))));
+            this.billsMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
             this.billsMenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.billsMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.billsMenuButton.ForeColor = System.Drawing.Color.White;
             this.billsMenuButton.Image = ((System.Drawing.Image)(resources.GetObject("billsMenuButton.Image")));
             this.billsMenuButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.billsMenuButton.Location = new System.Drawing.Point(4, 271);
+            this.billsMenuButton.Location = new System.Drawing.Point(3, 285);
             this.billsMenuButton.Name = "billsMenuButton";
             this.billsMenuButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.billsMenuButton.Size = new System.Drawing.Size(114, 36);
+            this.billsMenuButton.Size = new System.Drawing.Size(136, 42);
             this.billsMenuButton.TabIndex = 10;
             this.billsMenuButton.Text = "   Bills";
             this.billsMenuButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -201,20 +203,20 @@ namespace CarRentalApp.View.Forms
             // 
             // settingsMenuButton
             // 
-            this.settingsMenuButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.settingsMenuButton.BackColor = System.Drawing.Color.SteelBlue;
             this.settingsMenuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.settingsMenuButton.FlatAppearance.BorderSize = 0;
             this.settingsMenuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.settingsMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(42)))));
+            this.settingsMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
             this.settingsMenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.settingsMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsMenuButton.ForeColor = System.Drawing.Color.White;
             this.settingsMenuButton.Image = ((System.Drawing.Image)(resources.GetObject("settingsMenuButton.Image")));
             this.settingsMenuButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.settingsMenuButton.Location = new System.Drawing.Point(1, 522);
+            this.settingsMenuButton.Location = new System.Drawing.Point(2, 631);
             this.settingsMenuButton.Name = "settingsMenuButton";
             this.settingsMenuButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.settingsMenuButton.Size = new System.Drawing.Size(140, 45);
+            this.settingsMenuButton.Size = new System.Drawing.Size(136, 42);
             this.settingsMenuButton.TabIndex = 5;
             this.settingsMenuButton.Text = "   Settings";
             this.settingsMenuButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -224,20 +226,20 @@ namespace CarRentalApp.View.Forms
             // 
             // homeMenuButton
             // 
-            this.homeMenuButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.homeMenuButton.BackColor = System.Drawing.Color.SteelBlue;
             this.homeMenuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.homeMenuButton.FlatAppearance.BorderSize = 0;
             this.homeMenuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.homeMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(42)))));
+            this.homeMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
             this.homeMenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.homeMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeMenuButton.ForeColor = System.Drawing.Color.White;
             this.homeMenuButton.Image = ((System.Drawing.Image)(resources.GetObject("homeMenuButton.Image")));
             this.homeMenuButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.homeMenuButton.Location = new System.Drawing.Point(3, 138);
+            this.homeMenuButton.Location = new System.Drawing.Point(4, 118);
             this.homeMenuButton.Name = "homeMenuButton";
             this.homeMenuButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.homeMenuButton.Size = new System.Drawing.Size(123, 60);
+            this.homeMenuButton.Size = new System.Drawing.Size(135, 42);
             this.homeMenuButton.TabIndex = 6;
             this.homeMenuButton.Text = "   Home";
             this.homeMenuButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -247,20 +249,20 @@ namespace CarRentalApp.View.Forms
             // 
             // usersMenuButton
             // 
-            this.usersMenuButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.usersMenuButton.BackColor = System.Drawing.Color.SteelBlue;
             this.usersMenuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.usersMenuButton.FlatAppearance.BorderSize = 0;
             this.usersMenuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.usersMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(42)))));
+            this.usersMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
             this.usersMenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.usersMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usersMenuButton.ForeColor = System.Drawing.Color.White;
             this.usersMenuButton.Image = ((System.Drawing.Image)(resources.GetObject("usersMenuButton.Image")));
             this.usersMenuButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.usersMenuButton.Location = new System.Drawing.Point(0, 466);
+            this.usersMenuButton.Location = new System.Drawing.Point(2, 542);
             this.usersMenuButton.Name = "usersMenuButton";
             this.usersMenuButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.usersMenuButton.Size = new System.Drawing.Size(135, 41);
+            this.usersMenuButton.Size = new System.Drawing.Size(136, 42);
             this.usersMenuButton.TabIndex = 7;
             this.usersMenuButton.Text = "   Users";
             this.usersMenuButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -270,20 +272,20 @@ namespace CarRentalApp.View.Forms
             // 
             // clientsMenuButton
             // 
-            this.clientsMenuButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.clientsMenuButton.BackColor = System.Drawing.Color.SteelBlue;
             this.clientsMenuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.clientsMenuButton.FlatAppearance.BorderSize = 0;
             this.clientsMenuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.clientsMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(42)))));
+            this.clientsMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
             this.clientsMenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.clientsMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientsMenuButton.ForeColor = System.Drawing.Color.White;
             this.clientsMenuButton.Image = ((System.Drawing.Image)(resources.GetObject("clientsMenuButton.Image")));
             this.clientsMenuButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.clientsMenuButton.Location = new System.Drawing.Point(-1, 401);
+            this.clientsMenuButton.Location = new System.Drawing.Point(2, 454);
             this.clientsMenuButton.Name = "clientsMenuButton";
             this.clientsMenuButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.clientsMenuButton.Size = new System.Drawing.Size(136, 35);
+            this.clientsMenuButton.Size = new System.Drawing.Size(135, 40);
             this.clientsMenuButton.TabIndex = 8;
             this.clientsMenuButton.Text = "   Clients";
             this.clientsMenuButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -293,20 +295,20 @@ namespace CarRentalApp.View.Forms
             // 
             // carsMenuButton
             // 
-            this.carsMenuButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.carsMenuButton.BackColor = System.Drawing.Color.SteelBlue;
             this.carsMenuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.carsMenuButton.FlatAppearance.BorderSize = 0;
             this.carsMenuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.carsMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(42)))));
+            this.carsMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
             this.carsMenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.carsMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.carsMenuButton.ForeColor = System.Drawing.Color.White;
             this.carsMenuButton.Image = ((System.Drawing.Image)(resources.GetObject("carsMenuButton.Image")));
             this.carsMenuButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.carsMenuButton.Location = new System.Drawing.Point(-1, 339);
+            this.carsMenuButton.Location = new System.Drawing.Point(2, 369);
             this.carsMenuButton.Name = "carsMenuButton";
             this.carsMenuButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.carsMenuButton.Size = new System.Drawing.Size(142, 40);
+            this.carsMenuButton.Size = new System.Drawing.Size(136, 40);
             this.carsMenuButton.TabIndex = 9;
             this.carsMenuButton.Text = "   Cars";
             this.carsMenuButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -316,20 +318,20 @@ namespace CarRentalApp.View.Forms
             // 
             // rentsMenuButton
             // 
-            this.rentsMenuButton.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.rentsMenuButton.BackColor = System.Drawing.Color.SteelBlue;
             this.rentsMenuButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rentsMenuButton.FlatAppearance.BorderSize = 0;
             this.rentsMenuButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(122)))), ((int)(((byte)(136)))));
-            this.rentsMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(42)))));
+            this.rentsMenuButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gold;
             this.rentsMenuButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rentsMenuButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rentsMenuButton.ForeColor = System.Drawing.Color.White;
             this.rentsMenuButton.Image = ((System.Drawing.Image)(resources.GetObject("rentsMenuButton.Image")));
             this.rentsMenuButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rentsMenuButton.Location = new System.Drawing.Point(-2, 204);
+            this.rentsMenuButton.Location = new System.Drawing.Point(3, 209);
             this.rentsMenuButton.Name = "rentsMenuButton";
             this.rentsMenuButton.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.rentsMenuButton.Size = new System.Drawing.Size(116, 42);
+            this.rentsMenuButton.Size = new System.Drawing.Size(136, 42);
             this.rentsMenuButton.TabIndex = 10;
             this.rentsMenuButton.Text = "   Rents";
             this.rentsMenuButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -342,9 +344,10 @@ namespace CarRentalApp.View.Forms
             this.datetimeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.datetimeLabel.AutoSize = true;
+            this.datetimeLabel.BackColor = System.Drawing.Color.Transparent;
             this.datetimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datetimeLabel.ForeColor = System.Drawing.Color.Silver;
-            this.datetimeLabel.Location = new System.Drawing.Point(1, 617);
+            this.datetimeLabel.Location = new System.Drawing.Point(0, 727);
             this.datetimeLabel.Margin = new System.Windows.Forms.Padding(0);
             this.datetimeLabel.Name = "datetimeLabel";
             this.datetimeLabel.Size = new System.Drawing.Size(138, 16);
@@ -357,16 +360,16 @@ namespace CarRentalApp.View.Forms
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.BackColor = System.Drawing.Color.Black;
             this.panel5.Controls.Add(this.sidePanel);
             this.panel5.Location = new System.Drawing.Point(0, 280);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(307, 31);
+            this.panel5.Size = new System.Drawing.Size(303, 31);
             this.panel5.TabIndex = 1;
             // 
             // sidePanel
             // 
-            this.sidePanel.BackColor = System.Drawing.Color.Transparent;
+            this.sidePanel.BackColor = System.Drawing.Color.Black;
             this.sidePanel.Location = new System.Drawing.Point(0, 0);
             this.sidePanel.Name = "sidePanel";
             this.sidePanel.Size = new System.Drawing.Size(260, 31);
@@ -379,7 +382,7 @@ namespace CarRentalApp.View.Forms
             this.infoPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.infoPanel.Location = new System.Drawing.Point(0, 0);
             this.infoPanel.Name = "infoPanel";
-            this.infoPanel.Size = new System.Drawing.Size(307, 236);
+            this.infoPanel.Size = new System.Drawing.Size(303, 236);
             this.infoPanel.TabIndex = 1;
             // 
             // pictureBox1
@@ -390,7 +393,7 @@ namespace CarRentalApp.View.Forms
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(7, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(294, 221);
+            this.pictureBox1.Size = new System.Drawing.Size(290, 221);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -410,7 +413,7 @@ namespace CarRentalApp.View.Forms
             this.contentPannel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contentPannel.Location = new System.Drawing.Point(307, 0);
             this.contentPannel.Name = "contentPannel";
-            this.contentPannel.Size = new System.Drawing.Size(1556, 1063);
+            this.contentPannel.Size = new System.Drawing.Size(1571, 1139);
             this.contentPannel.TabIndex = 1;
             // 
             // MainForm
@@ -419,7 +422,7 @@ namespace CarRentalApp.View.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoScrollMinSize = new System.Drawing.Size(1220, 700);
-            this.ClientSize = new System.Drawing.Size(1863, 1063);
+            this.ClientSize = new System.Drawing.Size(1878, 1139);
             this.Controls.Add(this.contentPannel);
             this.Controls.Add(this.leftPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

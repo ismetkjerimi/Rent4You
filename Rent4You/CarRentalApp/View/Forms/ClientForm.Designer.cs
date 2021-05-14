@@ -460,6 +460,7 @@ namespace CarRentalApp.View.Forms
             this.clientPhoneTextBox.StateCommon.Content.Padding = new System.Windows.Forms.Padding(15, 2, 2, 2);
             this.clientPhoneTextBox.TabIndex = 6;
             this.clientPhoneTextBox.Text = "+41    -";
+            this.clientPhoneTextBox.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.clientPhoneTextBox_MaskInputRejected);
             // 
             // clientEmailTextBox
             // 
